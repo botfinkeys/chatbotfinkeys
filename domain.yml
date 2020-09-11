@@ -1,0 +1,170 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- salutation
+- aurevoir
+- confirmation
+- négation
+- bonne_humeur
+- mauvaise_humeur
+- bot_défi
+- compte_personnel
+- effectuer_paiement
+- compte_épargne
+- période_épargne
+- évolution_épargne
+- historamme
+- happy
+- cloture
+- remerciement
+- Investissement
+- transaction
+- transfert_argent
+- revenus
+- destinataires
+- help
+- mois
+- histogramme
+entities:
+- somme_argent
+- montant_paiement
+- carte_crédit
+- date_paiement
+- nom_fournisseur
+- temps
+- personne
+- nombre
+- compte
+slots:
+  carte_bancaire:
+    type: unfeaturized
+  compte_personnel:
+    type: unfeaturized
+  confirmation:
+    type: unfeaturized
+  end_time_formatted:
+    type: unfeaturized
+  heure_fin:
+    type: unfeaturized
+  montant_paiement:
+    type: unfeaturized
+  montant_transféré:
+    type: unfeaturized
+    initial_value: 0
+  personne:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+  search_type:
+    type: unfeaturized
+  somme_argent:
+    type: unfeaturized
+  start_time:
+    type: unfeaturized
+  start_time_formatted:
+    type: unfeaturized
+  time:
+    type: unfeaturized
+  time_formatted:
+    type: unfeaturized
+  type_montant_paiement:
+    type: unfeaturized
+    initial_value: ''
+responses:
+  utter_salutation:
+  - text: "Hello Samia :) \n cmt vas tu?"
+  utter_mauvaise_humeur:
+  - text: Ne vous inquiétez pas, tout ira bien
+  utter_bonne_humeur:
+  - text: Parfait, cmt je peux te rendre service?
+  utter_aurevoir:
+  - text: Bye
+  utter_bot_défi:
+  - text: je suis votre assistant financier
+  utter_confirmation:
+  - text: ça marche
+  utter_négation:
+  - text: Comment je peux vous aider?
+  utter_remerciement:
+  - text: pas de souci
+  utter_help:
+  - text: "Je suis ton agent financier personnel. \ntu peux m'interroger à propos\
+      \ de : \n- crédit de ton compte personnel \n- ton épargne \n- ton historique\
+      \ de dépenses"
+  utter_solde_juin_juillet:
+  - image: http://localhost:8889/view/Desktop/PFE/compte_samia.jpeg
+    text: "Juin 2020 : 1200 \n juillet 2020 : 2000 "
+  utter_reformule_demande:
+  - text: je n'ai pas compris. Pouviez vous le dire autrement?
+  utter_ok:
+  - text: 👍
+  utter_continuer:
+  - text: Voulez-vous continuer?
+  utter_erreur:
+  - text: je n'ai pas compris. Pouviez vous le dire autrement?
+  utter_compte_personnel:
+  - text: Votre crédit est {currency}{init_account_balance}
+  utter_solde_compte_modifié:
+  - text: Votre solde était {currency}{init_account_balance} et actuellement c'est
+      {currency}{account_balance} après avoir effectuer l'ensemble de tes opérations
+  utter_fonds_insuffisants:
+  - text: Désolé, vous n'avez pas assez d'argent pour cela!
+  utter_solde_mois:
+  - text: "figures toi que tu demandes à la bonne personne hhh - que dis je au meilleur\
+      \ banquier du net :) \n- à quelle date voudrais-tu ton solde ?"
+  utter_période_épargne:
+  - text: "T'es vraiement une tete en l'air ma chere Samia mdrrr \n alors la meme\
+      \ periode ou une autre en particulier "
+  utter_épargne_juin_juillet:
+  - text: "Juin 2020: 4000 \n Juillet 2020: 4400"
+  utter_évolution_épargne:
+  - text: "Ton epargne a crû de 20% en moyenne depuis 6 mois , tu es sur la bonne\
+      \ voie , \n continue , plus tu accumules mieux c'est chica \U0001F60A \n Veux\
+      \ tu visualiser tout ça sous forme de graphe"
+  utter_histogramme:
+  - image: http://localhost:8889/view/Desktop/PFE/epargne_samia.jpeg
+    text: "et pourquoi pas un chandelier hahahaha \U0001F609 \n voici ton graphe Samia "
+  utter_happy:
+  - text: "encore besoin de quelque chose Samia? \n ne sois pas timide , vas y balances\
+      \ la sauce hahah \U0001F602 "
+  utter_cloture:
+  - text: "et bien !!!! voyez vous ça, elle ne peut plus se passer de moi \n Marcus\
+      \ un jour , Marcus pour toujours \U0001F91E "
+actions:
+- action_compte_personnel
+- action_debut_session
+- action_redemarrage
+- action_solde_carte_bancaire
+- action_destinataires
+- action_paiement
+- action_capacité_épargne
+- action_compte_épargne
+- action_investissement
+- action_default_fallback
+- utter_salutation
+- utter_mauvaise_humeur
+- utter_bonne_humeur
+- utter_aurevoir
+- utter_bot_défi
+- utter_confirmation
+- utter_négation
+- utter_remerciement
+- utter_help
+- utter_solde_juin_juillet
+- utter_reformule_demande
+- utter_ok
+- utter_continuer
+- utter_erreur
+- utter_compte_personnel
+- utter_solde_compte_modifié
+- utter_fonds_insuffisants
+- utter_solde_mois
+- utter_période_épargne
+- utter_épargne_juin_juillet
+- utter_évolution_épargne
+- utter_histogramme
+- utter_happy
+- utter_cloture
+forms:
+- transaction_form
