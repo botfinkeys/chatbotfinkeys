@@ -10,6 +10,9 @@
 ## intent:aurevoir
 - bye
 - aurevoir
+- a + 
+- aurevoir Marcus
+- aurevoir cher ami
 - à plus
 - à bientôt
 - à très bientôt

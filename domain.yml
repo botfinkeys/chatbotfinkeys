@@ -93,7 +93,7 @@ responses:
       \ de : \n- crédit de ton compte personnel \n- ton épargne \n- ton historique\
       \ de dépenses"
   utter_solde_juin_juillet:
-  - image: http://localhost:8889/view/Desktop/PFE/compte_samia.jpeg
+  - image: http://localhost:8888/view/Desktop/PFE/compte_samia.jpeg
     text: "Juin 2020 : 1200 \n juillet 2020 : 2000 "
   utter_reformule_demande:
   - text: je n'ai pas compris. Pouviez vous le dire autrement?
@@ -117,19 +117,19 @@ responses:
   - text: "T'es vraiement une tete en l'air ma chere Samia mdrrr \n alors la meme\
       \ periode ou une autre en particulier "
   utter_épargne_juin_juillet:
-  - text: "Juin 2020: 4000 \n Juillet 2020: 4400"
+  - text: "Juin 2020: 4000 \nJuillet 2020: 4400"
   utter_évolution_épargne:
   - text: "Ton epargne a crû de 20% en moyenne depuis 6 mois , tu es sur la bonne\
       \ voie , \n continue , plus tu accumules mieux c'est chica \U0001F60A \n Veux\
       \ tu visualiser tout ça sous forme de graphe"
   utter_histogramme:
-  - image: http://localhost:8889/view/Desktop/PFE/epargne_samia.jpeg
+  - image: http://localhost:8888/view/Desktop/PFE/epargne_samia.jpeg
     text: "et pourquoi pas un chandelier hahahaha \U0001F609 \n voici ton graphe Samia "
   utter_happy:
   - text: "encore besoin de quelque chose Samia? \n ne sois pas timide , vas y balances\
       \ la sauce hahah \U0001F602 "
   utter_cloture:
-  - text: "et bien !!!! voyez vous ça, elle ne peut plus se passer de moi \n Marcus\
+  - text: "et bien !!!! voyez vous ça, elle ne peut plus se passer de moi \nMarcus\
       \ un jour , Marcus pour toujours \U0001F91E "
 actions:
 - action_compte_personnel
